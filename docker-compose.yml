@@ -8,6 +8,7 @@ x-base_service: &base_service
       - &v2 ./output:/output
     stop_signal: SIGKILL
     tty: true
+    network_mode: "host"
     deploy:
       resources:
         reservations:
